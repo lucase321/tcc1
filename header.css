@@ -1,0 +1,202 @@
+body{
+overflow-x: hidden;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    background-color: #38b6ff;
+    width: 100%;
+    height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    position: fixed;
+    z-index: 20;
+}
+
+.logo {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+}
+
+ul {
+    display: flex;
+    gap: 4rem;
+}
+
+.center-menu {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ a {
+    font-family: "Poppins", sans-serif;
+}
+span {
+    font-family: "Poppins", sans-serif;
+}
+.left-menu {
+    width:120px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.right-menu {
+    width:120px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.right-menu img {
+    width: 36px;
+    height: 36px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+#dropdown {
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.right-menu a span {
+    margin-left: 10px;
+}
+
+li {
+    list-style: none
+}
+
+
+
+
+
+
+.righ-menu {
+    width:120px;
+    position: relative;
+    float: right;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.righ-menu img {
+    width: 36px;
+    height: 36px;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infos span { 
+    margin-left: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #333;
+}
+.infos:hover {
+    cursor: pointer;
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #38b6ff;
+    width:120px;
+}
+.dropdown-menu a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.dropdown-menu a:hover {
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+.righ-menu a span {
+    margin-left: 10px;
+}
+
+#dropdown {
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+}
+
+
+.righ-menu:hover .dropdown-menu {
+    display: block;
+}
+.mobile-menu {
+    display:none;
+}
+.mobile-menu-icon {
+    display:none;
+}
+@media only screen and (max-width: 960px){
+    .menu {
+        padding: 1.5rem 4rem;
+    }
+    .mobile-menu {
+        /* display: block; */
+        cursor: pointer;
+        position: absolute;
+        background-color: #38b6ff;
+        top: 5.6rem;
+        right: 0;
+        z-index:20;
+        width: 300px;
+        
+    }
+    .right-menu, .righ-menu {
+        display: none;
+    }
+    .nav-item {
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        display:block;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .open {
+        display: block;
+    }
+
+    ul {
+        gap: 1.5rem;
+    }
+}
